@@ -4,49 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>stronka na tadi</title>
-    <script>
-        let a=prompt("Jak się nazywasz?")
-    </script>
-    <style>
-        *{
-            margin=0px;
-        }
-        h2 {
-            color:red;
-        }
-        h3 {
-            color:darkblue;
-        }
-        h4 {
-            color:goldenrod;
-        }
-        h5{
-            color:green;
-        }
-        b{
-            color:chocolate;
-            text-shadow: 10px 10px 10px dimgray;
-            
-        }
-        
-    </style>
+    <title>Projekt</title>
 </head>
 <body>
-    <header>
-    <marquee><h1>Fajna i przyjemna stronka na tadi</h1></marquee>
-    </header>
     <script>
-        document.write("<h1> Witaj na niezłej stronce <b><u><i>"+a+"!</i></u></b></h1>")
+        let a,b,c
+       
+            a=prompt("Wybierz zadanko \n1 - rzut monetą \n2- rzut kostka")
+            a=parseInt(a)
+            switch(a){
+            case 1:
+                b=Math.floor(Math.random()*2)+1
+                //document.write(b)
+                if(b==1){
+                    document.write("<h1> Wypadł orzeł! </h1>")
+                }
+                else if(b==2){
+                    document.write("<h1> Wypadła reszka! </h1>")
+                }
+
+            break;
+            case 2:
+                c=Math.floor(Math.random()*6)+1
+                if(c==1){
+                    document.write("<h1> Wypadło 1 oczko! </h1>")
+                }
+                if(c==2){
+                    document.write("<h1> Wypadły 2 oczka! </h1>")
+                }
+                if(c==3){
+                    document.write("<h1> Wypadły 3 oczka! </h1>")
+                }
+                if(c==4){
+                    document.write("<h1> Wypadły 4 oczka! </h1>")
+                }
+                if(c==5){
+                    document.write("<h1> Wypadło 5 oczek! </h1>")
+                }
+                if(c==6){
+                    document.write("<h1> Wypadło 6 oczek! </h1>")
+                }
+            }
+            
+        
     </script>
-    <main>
-    <h2>To</h2>
-    <h3>Właśnie</h3>
-    <h4>Taka</h4>
-    <h5>Stronka</h5>
-    </main>
-    <footer>
-        <h6>Stronkę wykonał: Dominik Wróblewski</h6>
-    </footer>
 </body>
 </html>
